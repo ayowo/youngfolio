@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ayoung Portfolio</title>
+    <link rel="stylesheet" href="master.css">
+
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'dez1cdg',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+
+        <div class="menu">
+          <ul id="nav">
+            <li><a href="index.html#anchor1">ABOUT</a></li>
+            <li><a href="index.html#anchor2">ARTWORK</a>
+              <ul>
+                <li><a href="sub01.html">Graphic Design</a></li><hr>
+                <li><a href="sub02.html">Motion Graphic</a></li><hr>
+                <li><a href="sub03.html">Web Publishing</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#anchor3">CONTACT</a></li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+
+    <section>
+
+      <!-- 스크롤을 내리면 work 안에 있는 이미지 하나 둘 씩 나타나는 동작 -->
+      <script>AOS.init();</script>
+
+      <div class="sub03_01">
+        <div class="sub03_01_main">
+          <img src="img/Sub03_main.gif" alt="Sub03 Main">
+          <div class="sub03_01_main_text text-focus-in">Motion Graphic</div>
+        </div>
+      </div>
+
+      <div class="sub03_02">
+
+        <div class="sub03_02_web">
+
+          <div data-aos="fade-up">
+            <div class="sub03_02_web_01">
+              <div class="sub03_02_web_01_img"><img src="img/sub03_web_01.png" alt="Web Publishing img"></div>
+              <div class="sub03_02_web_01_text">
+                  <div class="sub03_02_web_01_text_01">
+                    <p class="sub03_02_web_01_text_01_title">
+                      드라마 미씽 웹사이트<br>제작 프로젝트</p>
+                    <p>2020.09~2020.12</p>
+                  </div>
+                  <div class="sub03_02_web_01_text_line"></div>
+                  <div class="sub03_02_web_01_text_02">
+                    <p>드라마 '미씽' 을 홍보하는 웹사이트를 제작했으며</p>
+                    <p>드라마의 분위기를 고려하여 블랙-회색의 컬러를</p>
+                    <p>중심으로 홈페이지를 디자인 했다.</p>
+                  </div>
+                  <a href="http://fjqmdb816.dothome.co.kr/" target="_blank"><div class="sub03_02_web_01_text_button">바로가기 ></div></a>
+                </div>
+              </div>
+          </div>
+
+          <div data-aos="fade-down">
+            <div class="sub03_02_web_02">
+              <div class="sub03_02_web_02_img"><img src="img/sub03_web_02.png" alt="Web Publishing img"></div>
+              <div class="sub03_02_web_02_text">
+                    <div class="sub03_02_web_02_text_01">
+                      <p class="sub03_02_web_02_text_01_title">
+                        Nevilld Brody 웹사이트<br>제작 프로젝트</p>
+                      <p>2021.03~2021.06</p>
+                    </div>
+                    <div class="sub03_02_web_02_text_line"></div>
+                    <div class="sub03_02_web_02_text_02">
+                      <p>네빌 브로디를 존경하는 마음을 담아서 그의 대표</p>
+                      <p>적인 작품과 명언을 소개하는 웹사이트를 제작했다.</p>
+                      <p>두 개의 메인 컬러를 통해 잔잔한 분위기를 표현했다.</p>
+                    </div>
+                    <a href="https://ay-ovo.github.io/webdesign/" target="_blank"><div class="sub03_02_web_02_text_button">바로가기 ></div></a>
+                  </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <a id="top_button" href="#">
+        <img src="img/main_top_button.png" alt="top button">
+      </a>
+
+      <div class="sub_bt">
+        <a href="javascript:history.back();" class="sub_button">back</a>
+      </div>
+
+      <div class="sub_footer">
+        <div class="sub_footer_01">
+          <img src="img/sub_footer_logo.png" alt="logo">
+          <p class="sub_footer_text">
+            M. 010 9256 2539<br>
+            E.  bay0816@daum.net</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!--최상단 버튼 스크립트-->
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 600) {
+                $('#top_button').fadeIn();
+            } else {
+                $('#top_button').fadeOut();
+            }
+        });
+
+        $("#top_button").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 600);
+            return false;
+        });
+    });
+    </script>
+    <!--최상단 버튼 스크립트-->
+
+    <footer>
+      <div class="footer_01">copyright ⓒ 2021 Bin A Young. all rights reserved.</div>
+    </footer>
+
+  </body>
+</html>
